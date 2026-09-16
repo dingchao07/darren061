@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEO 服務規格與報價</title>
+<meta name="report-client" content="通用"><meta name="report-score" content=""><meta name="report-desc" content="GEO 四種合作方式、全包保證方案規格、外站文章建置包、單項加購價目"><meta name="report-tags" content="GEO,報價,規格"><meta name="report-type" content="quote"><meta name="report-date" content="2026-09-16">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+:root{
+  --bg:#F4F5F9; --card:#FFFFFF; --ink:#0F1222; --ink2:#2B3044; --mut:#6B7189; --line:#E3E6EF; --soft:#F0F1F7;
+  --p:#4F46E5; --p2:#6366F1; --pl:#EEF0FF; --pd:#3730A3;
+  --c:#0891B2; --cl:#E6F7FB;
+  --a:#D97706; --al:#FFF6E5;
+  --g:#059669; --gl:#E7F8F1;
+  --r:#DC2626; --rl:#FDECEC;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter','Noto Sans TC',sans-serif;background:var(--bg);color:var(--ink);font-size:13.5px;line-height:1.7}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+/* hero */
+.hero{background:var(--ink);color:#fff;border-radius:20px;padding:44px 48px 36px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.55),rgba(99,102,241,0) 70%)}
+.hero::before{content:"";position:absolute;left:40%;bottom:-220px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(8,145,178,.35),rgba(8,145,178,0) 70%)}
+.hero>*{position:relative;z-index:1}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#A5B4FC;font-weight:700;margin-bottom:14px}
+.title{font-size:34px;font-weight:900;line-height:1.2;letter-spacing:-.01em;margin-bottom:12px}
+.title small{display:block;font-size:14px;font-weight:500;color:#C7CBE6;margin-bottom:8px;letter-spacing:0}
+.lead{font-size:14px;color:#C7CBE6;max-width:720px;line-height:1.8}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:8px 14px;font-size:11.5px;color:#C7CBE6}
+.chip b{display:block;color:#fff;font-size:12.5px;font-weight:600;margin-top:1px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px 16px 14px}
+.stat .n{font-size:26px;font-weight:800;line-height:1;color:#fff;letter-spacing:-.02em}
+.stat .n small{font-size:12px;font-weight:600;color:#A5B4FC;margin-left:3px}
+.stat .l{font-size:11px;color:#B4B9D6;margin-top:8px;line-height:1.5}
+/* layout */
+.layout{display:grid;grid-template-columns:220px 1fr;gap:28px;margin-top:28px;align-items:start}
+.side{position:sticky;top:20px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 10px}
+.side .nvl{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:8px 12px 6px}
+.side a{display:flex;gap:10px;align-items:center;padding:8px 12px;border-radius:10px;color:var(--ink2);text-decoration:none;font-size:12.5px;font-weight:500}
+.side a:hover{background:var(--pl);color:var(--pd)}
+.side a .no{font-family:'Inter';font-size:11px;font-weight:700;color:var(--p);min-width:20px}
+main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:22px;overflow:hidden}
+.sec-h{display:flex;align-items:center;gap:14px;padding:22px 30px 0}
+.sec-h .no{font-family:'Inter';font-size:12px;font-weight:800;color:var(--p);background:var(--pl);border-radius:8px;padding:4px 9px}
+.sec-h h2{font-size:19px;font-weight:800;letter-spacing:-.01em}
+.pc{padding:16px 30px 28px}
+.intro{font-size:13.5px;color:var(--ink2);margin:0 0 14px;line-height:1.8}
+h3.sh{font-size:14px;font-weight:700;color:var(--ink);margin:22px 0 10px;display:flex;align-items:center;gap:10px}
+h3.sh::before{content:"";width:6px;height:18px;border-radius:3px;background:linear-gradient(180deg,var(--p),var(--c))}
+h3.sh .pr{margin-left:auto;font-family:'Inter';font-size:13px;font-weight:800;color:var(--pd);background:var(--pl);padding:3px 10px;border-radius:8px}
+/* plan cards */
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 10px}
+.plans.five{grid-template-columns:repeat(5,1fr)}
+.plan{border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;background:linear-gradient(180deg,#fff,#FAFAFE);position:relative}
+.plan.hi{border-color:var(--p2);box-shadow:0 0 0 3px var(--pl);padding-top:34px}
+.plan .tag{font-family:'Inter';font-size:10.5px;font-weight:800;color:var(--p);letter-spacing:.08em}
+.plan .nm{font-size:14px;font-weight:700;margin:4px 0 10px;line-height:1.35}
+.plan .pr{font-family:'Inter','Noto Sans TC';font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.plan .pr small{font-size:11.5px;font-weight:600;color:var(--mut);margin-left:4px;letter-spacing:0}
+.plan .un{font-size:11px;color:var(--mut);margin-top:4px}
+.plan ul{list-style:none;margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)}
+.plan li{font-size:11.5px;color:var(--ink2);padding:2px 0 2px 14px;position:relative;line-height:1.5}
+.plan li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--c)}
+.plan .rib{position:absolute;top:-1px;right:14px;background:var(--p);color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:0 0 8px 8px}
+/* table */
+.dt{width:100%;border-collapse:separate;border-spacing:0;margin:8px 0 6px;font-size:12.5px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.dt th{background:var(--soft);color:var(--mut);font-weight:700;font-size:11px;letter-spacing:.04em;text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+.dt td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.6}
+.dt tr:last-child td{border-bottom:none}
+.dt td.n,.dt th.n{text-align:right;font-family:'Inter','Noto Sans TC';font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.dt td.c{text-align:center}
+.dt tr.sr td{background:var(--pl);color:var(--pd);font-weight:700;font-size:11.5px;padding:8px 14px}
+.dt tr.hl td{background:var(--ink);color:#fff;font-weight:700}
+.dt .sub{display:block;font-size:11px;color:var(--mut);font-weight:400;margin-top:2px}
+.dt .strike{text-decoration:line-through;color:var(--mut);font-weight:500;font-size:11px;margin-right:6px}
+/* badges */
+.b{display:inline-block;padding:2px 9px;border-radius:999px;font-size:10.5px;font-weight:700;white-space:nowrap;vertical-align:middle}
+.bp{background:var(--pl);color:var(--pd)} .bc{background:var(--cl);color:#0E7490} .ba{background:var(--al);color:#92400E} .bg{background:var(--gl);color:#065F46} .bk{background:var(--ink);color:#fff}
+/* notes */
+.note{border-radius:12px;padding:12px 16px;font-size:12.5px;line-height:1.7;margin:12px 0}
+.note.i{background:var(--pl);color:var(--pd)} .note.a{background:var(--al);color:#7C2D12} .note.c{background:var(--cl);color:#155E75}
+/* points */
+.pts{display:grid;gap:8px;margin:8px 0}
+.pt{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border-radius:12px;padding:12px 14px}
+.pt-i{width:24px;height:24px;border-radius:8px;background:var(--p);color:#fff;font-family:'Inter';font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.pt.g .pt-i{background:var(--g)} .pt.a .pt-i{background:var(--a)} .pt.c .pt-i{background:var(--c)}
+.pt-b{font-size:12.5px;line-height:1.65;color:var(--ink2)} .pt-b b{color:var(--ink)}
+/* mini kpi */
+.mk{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:8px 0 6px}
+.mk.three{grid-template-columns:repeat(3,1fr)}
+.mkc{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mkh{background:var(--soft);font-size:11px;font-weight:700;color:var(--ink2);padding:7px 10px;text-align:center;line-height:1.4}
+.mkb{padding:12px 10px;text-align:center}
+.mkn{font-family:'Inter','Noto Sans TC';font-size:22px;font-weight:800;color:var(--p);line-height:1}
+.mku{font-size:10.5px;color:var(--mut);margin-top:3px}
+.mkt{font-size:10.5px;color:var(--ink2);margin-top:8px;padding-top:7px;border-top:1px dashed var(--line);line-height:1.45}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:8px 0}
+.step{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;position:relative}
+.step .k{font-family:'Inter';font-size:28px;font-weight:800;color:var(--pl);line-height:1;position:absolute;right:14px;top:10px}
+.step h5{font-size:13px;font-weight:700;margin-bottom:6px;padding-right:36px}
+.step p{font-size:11.5px;color:var(--ink2);line-height:1.6}
+.step .out{margin-top:8px;font-size:11px;color:var(--c);font-weight:700}
+.step .fr{display:inline-block;background:var(--gl);color:#065F46;font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px;margin-bottom:6px}
+/* compare */
+.cmp td.c .ok{color:var(--g);font-weight:800} .cmp td.c .no{color:#C4C8D6}
+/* footer */
+.foot{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 24px;border-top:1px solid var(--line);margin-top:10px;color:var(--mut);font-size:11.5px}
+.foot img{height:26px;border-radius:5px;opacity:.9}
+@media(max-width:960px){.layout{grid-template-columns:1fr}.side{position:static}.stats{grid-template-columns:repeat(2,1fr)}.plans,.plans.five,.mk,.steps{grid-template-columns:repeat(2,1fr)}.hero{padding:30px 24px}.title{font-size:26px}.pc{padding:14px 18px 22px}.sec-h{padding:18px 18px 0}}
+@media(max-width:560px){.plans,.plans.five,.mk,.steps,.mk.three{grid-template-columns:1fr}}
+@media print{body{background:#fff}.side{display:none}.layout{grid-template-columns:1fr}.card{break-inside:avoid;border-color:#ccc}.hero{border-radius:0}}
+</style></head>
+<body><div class="wrap">
+<header class="hero">
+  <div class="eyebrow">GEO · Generative Engine Optimization · 2026</div>
+  <h1 class="title"><small>生成式引擎優化服務</small>GEO 服務規格與報價</h1>
+  <p class="lead">讓品牌在 ChatGPT、Gemini、Perplexity、Google AI 搜尋的回答裡被提及、被引用。可全包代操，也可只買監控、文章或報告，與品牌內部團隊分工。</p>
+  <div class="chips">
+    <span class="chip">版本<b>2026.09</b></span>
+    <span class="chip">計價<b>新台幣，全部未稅</b></span>
+    <span class="chip">報價有效期<b>報價單開立日起 30 日</b></span>
+    <span class="chip">關鍵字判定<b>以第三方監測工具數據為準</b></span>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="n">4<small>種</small></div><div class="l">合作方式<br>全包、建置包、月報、文章</div></div>
+    <div class="stat"><div class="n">24<small>萬／半年</small></div><div class="l">全包保證方案<br>12 篇文章＋新聞 20 網</div></div>
+    <div class="stat"><div class="n">40<small>中</small>10</div><div class="l">保證被 AI 提及的關鍵字組數<br>多上不收費</div></div>
+    <div class="stat"><div class="n">30<small>%</small></div><div class="l">保證一年後仍未達標<br>依比例退費</div></div>
+    <div class="stat"><div class="n">9.9<small>萬／季</small></div><div class="l">外站文章建置包<br>10 篇文章＋月報</div></div>
+  </div>
+</header><div class="layout">
+<nav class="side">
+  <div class="nvl">目錄</div>
+  <a href="#s01"><span class="no">01</span><span>合作方式一覽</span></a>
+  <a href="#s02"><span class="no">02</span><span>全包保證方案</span></a>
+  <a href="#s03"><span class="no">03</span><span>外站文章建置包</span></a>
+  <a href="#s04"><span class="no">04</span><span>月報・文章單購</span></a>
+  <a href="#s05"><span class="no">05</span><span>方案對照表</span></a>
+  <a href="#s06"><span class="no">06</span><span>合作流程與內容佈局</span></a>
+  <a href="#s07"><span class="no">07</span><span>單項加購價目</span></a>
+</nav><main><section class="card" id="s01"><div class="sec-h"><span class="no">01</span><h2>合作方式一覽</h2></div><div class="pc">
+<p class="intro">四種方式，可以全包，也可以只買一項與品牌內部分工。A 為半年專案，建置包為一季，B 為年約，C 為單購。</p>
+<div class="plans">
+  <div class="plan hi"><div class="rib">保證成效・無效退費</div><div class="tag">PLAN A</div><div class="nm">全包保證方案<br><span style="font-weight:500;color:var(--mut)">一條龍代上稿</span></div><div class="pr">24 萬<small>／半年</small></div><div class="un">半年專案</div><ul><li>12 篇 GEO 文章，含撰寫上架</li><li>新聞 20 網聯播 1 組</li><li>AICDN 埋入、FAQ 分類規劃書</li><li>競品、關鍵字分析、月報</li><li>保證 40 中 10，退費 30%</li></ul></div>
+  <div class="plan"><div class="tag">PLAN E</div><div class="nm">外站文章建置包</div><div class="pr">9.9 萬<small>／季</small></div><div class="un">原價 16 萬・平均 3.3 萬／月</div><ul><li>10 篇 GEO 文章撰寫上架</li><li>每月成效報告</li><li>依體質置換平台比例</li><li>無 KPI 保證</li></ul></div>
+  <div class="plan"><div class="tag">PLAN B</div><div class="nm">GEO 監控月報</div><div class="pr">9,000<small>／月</small></div><div class="un">年約・年付 10.8 萬</div><ul><li>每月 AI 能見度月報</li><li>每月 1 小時顧問諮詢</li><li>競品分析、關鍵字規劃</li><li>與品牌內部分工</li></ul></div>
+  <div class="plan"><div class="tag">PLAN C</div><div class="nm">GEO 口碑文章</div><div class="pr">4.8 萬<small>／3 篇</small></div><div class="un">單購</div><ul><li>依關鍵字分析撰寫</li><li>Dcard、Mobile01、方格子等</li><li>買 2 組（6 篇）送 GEO 報告</li></ul></div>
+</div>
+<h3 class="sh">一次性與加購</h3>
+<table class="dt">
+<tr><th style="width:24%">項目</th><th>內容</th><th style="width:22%">適合</th><th class="n" style="width:12%">價格</th></tr>
+<tr><td><b>官網體質調整方案</b><span class="sub">一次性專案</span></td><td>AI 爬蟲可訪問性設定、Core Web Vitals 健檢、官網後台 Schema 全面部署、FAQ 主題叢集架構規劃</td><td>剛導入 GEO，要從技術地基建起的品牌</td><td class="n">66,000</td></tr>
+<tr><td><b>官網架設</b></td><td>依需求另議</td><td>—</td><td class="n">另議</td></tr>
+</table>
+<div class="note i">保證成效的判定基準：關鍵字以國際第三方 AI 搜尋監測工具的專業建議為主，方案以關鍵字品類區分。</div>
+</div></section><section class="card" id="s02"><div class="sec-h"><span class="no">02</span><h2>全包保證方案　<span style='color:var(--mut);font-weight:500;font-size:14px'>Plan A・24 萬／半年</span></h2></div><div class="pc">
+<p class="intro">一條龍代上稿。內容、新聞、官網技術、監測全部由我們執行，品牌端只需審稿。</p>
+<h3 class="sh">12 篇文章標準配置<span class="pr">進案後可依體質置換比例</span></h3>
+<div class="mk">
+  <div class="mkc"><div class="mkh">① 比較型文章</div><div class="mkb"><div class="mkn">2</div><div class="mku">篇</div><div class="mkt">品牌 vs 競品、選購比較</div></div></div>
+  <div class="mkc"><div class="mkh">② 教學・定義・FAQ</div><div class="mkb"><div class="mkn">2</div><div class="mku">篇</div><div class="mkt">回答 AI 最常被問的問題</div></div></div>
+  <div class="mkc"><div class="mkh">③ 外站文章</div><div class="mkb"><div class="mkn">4</div><div class="mku">篇</div><div class="mkt">痞客邦、Vocus、Medium 等</div></div></div>
+  <div class="mkc"><div class="mkh">④ 論壇口碑操作</div><div class="mkb"><div class="mkn">4</div><div class="mku">篇</div><div class="mkt">Dcard、Threads、Mobile01</div></div></div>
+  <div class="mkc"><div class="mkh">⑤ 新聞媒體聯播</div><div class="mkb"><div class="mkn">20</div><div class="mku">網・1 組</div><div class="mkt">權威語料</div></div></div>
+</div>
+<h3 class="sh">隨方案附帶，不另計價</h3>
+<table class="dt">
+<tr><th style="width:26%">項目</th><th>內容</th></tr>
+<tr><td><b>AICDN 埋入</b> <span class="b bg">免費贈送</span></td><td>對 AI 爬蟲回傳 Markdown 版頁面與推薦內容。實測兩組相同內容的新站，有 AICDN 的一組 AI 爬蟲拜訪量為對照組 10.46 倍</td></tr>
+<tr><td><b>官網站內 FAQ 分類規劃書</b></td><td>FAQ 主題叢集規劃</td></tr>
+<tr><td><b>競品分析、關鍵字分析規劃</b></td><td>競品洞察、prompt 分析、自家關鍵字結構、內容缺口分析、戰略總結與後續建議</td></tr>
+<tr><td><b>三層 prompt 清單</b></td><td>認知層、評估層、決策層</td></tr>
+<tr><td><b>月成效報告、監控報告</b></td><td>月報、監測報告、結案報告，PM 執案 Cue 表</td></tr>
+<tr><td><b>期中與結案會議</b></td><td>第 4 個月期中成效會議、第 7 個月結案會議</td></tr>
+</table>
+<h3 class="sh">保證與退費</h3>
+<div class="pts">
+  <div class="pt g"><div class="pt-i">1</div><div class="pt-b"><b>保證 40 組追蹤關鍵字中至少 10 組被 AI 提及。</b>多上不收費。</div></div>
+  <div class="pt g"><div class="pt-i">2</div><div class="pt-b"><b>結案未達標，專案免費延長半年。</b>保證一年內達標。</div></div>
+  <div class="pt a"><div class="pt-i">3</div><div class="pt-b"><b>一年後仍未達標，退費 30%。</b>依關鍵字達成比例計算。</div></div>
+  <div class="pt c"><div class="pt-i">4</div><div class="pt-b"><b>半年約。</b>市場多數 GEO 服務綁一年，本方案半年即可結案。</div></div>
+</div>
+<h3 class="sh">付款方式</h3>
+<table class="dt">
+<tr><th style="width:26%">階段</th><th>條件</th></tr>
+<tr><td><b>啟動</b></td><td>簽約後支付前 3 個月費用</td></tr>
+<tr><td><b>後續</b></td><td>第 3 個月起按季支付</td></tr>
+<tr><td><b>發票與匯款</b></td><td>收到發票後 30 天內匯款；金額另加 5% 營業稅</td></tr>
+</table>
+</div></section><section class="card" id="s03"><div class="sec-h"><span class="no">03</span><h2>外站文章建置包　<span style='color:var(--mut);font-weight:500;font-size:14px'>Plan E・99,000／季</span></h2></div><div class="pc">
+<p class="intro">只做內容、不綁保證的入門選項。用一季 10 篇文章把品牌放進 AI 會引用的第三方平台，適合先累積 AI 可引用語料、或已有內部團隊負責官網的品牌。</p>
+<div class="mk three">
+  <div class="mkc"><div class="mkh">文章</div><div class="mkb"><div class="mkn">10</div><div class="mku">篇／季</div><div class="mkt">GEO 文章撰寫＋上架<br>進案後依體質置換平台比例</div></div></div>
+  <div class="mkc"><div class="mkh">報告</div><div class="mkb"><div class="mkn">每月</div><div class="mku">成效報告</div><div class="mkt">文章上架狀況與 AI 引用追蹤</div></div></div>
+  <div class="mkc"><div class="mkh">價格</div><div class="mkb"><div class="mkn">99,000</div><div class="mku">／季・未稅</div><div class="mkt">原價 160,000<br>平均 33,000／月</div></div></div>
+</div>
+<table class="dt">
+<tr><th style="width:26%">項目</th><th>規格</th></tr>
+<tr><td><b>文章平台</b></td><td>外站與論壇：痞客邦、Vocus、Medium、Dcard、Mobile01、Threads 等，依關鍵字缺口配置</td></tr>
+<tr><td><b>關鍵字來源</b></td><td>以第三方監測工具專業建議為主，方案以關鍵字品類區分</td></tr>
+<tr><td><b>成效承諾</b></td><td>無 KPI 保證。要保證成效請選 Plan A</td></tr>
+<tr><td><b>不適用產業</b></td><td>臉部／身體／寵物／小孩露出、大型物件開箱、房地產／金融／保險／3C 專業長篇、探訪拍攝／體驗分享／深度競品開箱、醫美產業。特殊產業需另議，費用 ×2</td></tr>
+<tr><td><b>升級</b></td><td>可加購 Plan B 監控月報（9,000／月）補上 AI 能見度追蹤與顧問諮詢</td></tr>
+</table>
+</div></section><section class="card" id="s04"><div class="sec-h"><span class="no">04</span><h2>月報・文章單購</h2></div><div class="pc">
+<h3 class="sh">Plan B　GEO 監控月報<span class="pr">9,000／月・年約，年付 108,000</span></h3>
+<table class="dt">
+<tr><th style="width:26%">月報固定欄位</th><th>說明</th></tr>
+<tr><td><b>主題檢視</b></td><td>追蹤主題與 prompt 清單的覆蓋狀況</td></tr>
+<tr><td><b>競爭分析</b></td><td>與競品在 AI 回答中的相對位置</td></tr>
+<tr><td><b>引用分析、網站引用率</b></td><td>哪些網域、哪些頁面被 AI 引用；官網被引比例</td></tr>
+<tr><td><b>回應列表</b></td><td>AI 回答原文列表</td></tr>
+<tr><td><b>品牌提及率、聲量佔比、排名</b></td><td>提及率、Share of Voice、排名變化</td></tr>
+<tr><td><b>顧問諮詢</b></td><td>每月 1 次，1 小時</td></tr>
+<tr><td><b>競品分析、關鍵字分析規劃</b></td><td>隨方案附帶</td></tr>
+</table>
+<div class="note c">適合品牌自己寫內容、由我們負責監測與顧問的分工模式。</div>
+
+<h3 class="sh">Plan C　GEO 口碑文章<span class="pr">48,000／3 篇</span></h3>
+<div class="pts">
+  <div class="pt"><div class="pt-i">1</div><div class="pt-b"><b>依關鍵字分析撰寫。</b>文章切角對應 AI 收錄缺口，平台依合適配置：Dcard、Mobile01、方格子等。</div></div>
+  <div class="pt g"><div class="pt-i">2</div><div class="pt-b"><b>購買 2 組（6 篇）贈 GEO 報告 1 份。</b>含競品分析與關鍵字分析規劃執行書。</div></div>
+</div>
+
+</div></section><section class="card" id="s05"><div class="sec-h"><span class="no">05</span><h2>方案對照表</h2></div><div class="pc">
+<table class="dt cmp">
+<tr><th>項目</th><th class="c" style="text-align:center">A 全包保證</th><th style="text-align:center">E 建置包</th><th style="text-align:center">B 月報</th><th style="text-align:center">C 文章</th></tr>
+<tr><td>GEO 文章撰寫上架</td><td class="c">12 篇／半年</td><td class="c">10 篇／季</td><td class="c"><span class="no">—</span></td><td class="c">3 篇／組</td></tr>
+<tr><td>新聞 20 網聯播</td><td class="c">1 組</td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td></tr>
+<tr><td>AICDN 埋入、FAQ 分類規劃書</td><td class="c"><span class="ok">✓</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td></tr>
+<tr><td>競品分析、關鍵字分析規劃</td><td class="c"><span class="ok">✓</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="ok">✓</span></td><td class="c"><span class="no">—</span></td></tr>
+<tr><td>成效報告</td><td class="c">每月＋結案</td><td class="c">每月</td><td class="c">每月</td><td class="c"><span class="no">—</span></td></tr>
+<tr><td>顧問諮詢</td><td class="c">期中＋結案會議</td><td class="c"><span class="no">—</span></td><td class="c">每月 1 小時</td><td class="c"><span class="no">—</span></td></tr>
+<tr><td>成效保證</td><td class="c"><b>40 中 10，未達退 30%</b></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td></tr>
+<tr><td>合約期</td><td class="c">半年</td><td class="c">一季</td><td class="c">一年</td><td class="c">單購</td></tr>
+<tr class="hl"><td>價格（未稅）</td><td class="c">240,000／半年</td><td class="c">99,000／季</td><td class="c">9,000／月</td><td class="c">48,000／3 篇</td></tr>
+</table>
+<div class="note i">建議入口：要保證成效選 A；先累積內容選 E；已有內容團隊選 B。</div>
+</div></section><section class="card" id="s06"><div class="sec-h"><span class="no">06</span><h2>合作流程與內容佈局</h2></div><div class="pc">
+<h3 class="sh">四步流程</h3>
+<div class="steps">
+  <div class="step"><div class="k">01</div><span class="fr">免費</span><h5>GEO 官網健檢</h5><p>拆解網站七大架構，導入國際第三方監測工具，以客觀數據健檢官網技術體質。</p><div class="out">產出：完整健檢報告</div></div>
+  <div class="step"><div class="k">02</div><h5>GEO 競品分析</h5><p>合作後提供。競品洞察、prompt 分析、自家關鍵字結構、與競品的搜尋差異、內容缺口分析。</p><div class="out">產出：戰略總結與後續建議</div></div>
+  <div class="step"><div class="k">03</div><h5>prompt 分析與內容建置</h5><p>合作後提供。認知層、評估層、決策層三層 prompt 清單，據此撰寫與上架內容。</p><div class="out">產出：月報、監測報告、結案報告</div></div>
+  <div class="step"><div class="k">04</div><h5>PM 執案 Cue 表</h5><p>簽約後建立 LINE 工作群，提供雲端作業 Cue 表、執行細節與工作天數。</p><div class="out">產出：Cue 表與排程</div></div>
+</div>
+<h3 class="sh">內容平台三層佈局</h3>
+<div class="mk three">
+  <div class="mkc"><div class="mkh">官方語料</div><div class="mkb"><div class="mkn">官網</div><div class="mku">Blog、FAQ</div><div class="mkt">AI 視為「官方」資料，最容易被收錄，是 GEO 核心陣地</div></div></div>
+  <div class="mkc"><div class="mkh">關鍵信任語料</div><div class="mkb"><div class="mkn">論壇・外站</div><div class="mku">Dcard、Threads、Mobile01、痞客邦、Vocus、Medium</div><div class="mkt">增加品牌在不同語境出現的頻率</div></div></div>
+  <div class="mkc"><div class="mkh">權威語料</div><div class="mkb"><div class="mkn">新聞媒體</div><div class="mku">20 網聯播</div><div class="mkt">同時強化傳統搜尋收錄</div></div></div>
+</div>
+<div class="note c">University of Toronto 2025 年 9 月論文《Generative Engine Optimization: How to Dominate AI Search》與 Muck Rack 報告：AI 回答的引用來源有 89% 來自第三方媒體。第三方內容佈局是 GEO 的主戰場。</div>
+</div></section><section class="card" id="s07"><div class="sec-h"><span class="no">07</span><h2>單項加購價目</h2></div><div class="pc">
+<p class="intro">方案內文章或聯播要加量，或單購客戶要零買時適用。價格未稅；特殊產業或人設另計。</p>
+<h3 class="sh">口碑文章　論壇・FB・在地社團</h3>
+<table class="dt">
+<tr><th style="width:24%">項目</th><th>規格</th><th class="n" style="width:14%">價格</th></tr>
+<tr><td><b>短開詢問文</b></td><td>300 字元以下，不含圖片，無使用經驗分享。論壇：Mobile01、Dcard、PTT、巴哈姆特、BabyHome</td><td class="n">3,600</td></tr>
+<tr><td><b>短開箱文</b></td><td>300 字元以下，論壇或 FB，含使用心得</td><td class="n">4,800</td></tr>
+<tr><td><b>長開箱文</b></td><td>800 字元內，圖片 3 至 5 張，多產品或競品開箱、含優缺點</td><td class="n">8,800</td></tr>
+<tr><td><b>特殊開箱文</b></td><td>1200 字元以下：人物露出、大型物件、房地產／金融／保險／3C 專業長篇、探訪拍攝、深度競品</td><td class="n">16,000</td></tr>
+<tr><td><b>特殊開箱（客戶供照片）</b></td><td>同上規格，照片由客戶提供</td><td class="n">14,000</td></tr>
+<tr><td><b>回文</b></td><td>50 字元以下，不含圖片。過稿 650、不過稿 550</td><td class="n">650／550</td></tr>
+<tr><td><b>Threads 開文／長開文</b></td><td>300 字元以下／300 至 500 字元含圖 3 張以上</td><td class="n">4,800／9,600</td></tr>
+<tr class="sr"><td colspan="3">加成</td></tr>
+<tr><td>特殊產業或人設</td><td>孕婦、媽媽、特殊需求商品等</td><td class="n">單篇 ×1.5</td></tr>
+<tr><td>急件</td><td>七個工作日內完成</td><td class="n">單篇 ×2</td></tr>
+<tr><td>品牌負評</td><td>輕度負評 ×1.5；嚴重負評 ×2</td><td class="n">—</td></tr>
+</table>
+<h3 class="sh">新聞媒體聯播包套</h3>
+<table class="dt">
+<tr><th style="width:12%">方案</th><th style="width:10%">網數</th><th>指定媒體</th><th class="n" style="width:14%">價格</th></tr>
+<tr><td><b>A</b></td><td>8 網</td><td>中時／經濟／工商＋不限頻道</td><td class="n">40,000</td></tr>
+<tr><td><b>B</b></td><td>10 網</td><td>同 A</td><td class="n">48,000</td></tr>
+<tr><td><b>C</b></td><td>8 網</td><td>波波黛莉＋生活類聯播</td><td class="n">35,000</td></tr>
+<tr><td><b>D</b></td><td>12 網</td><td>YAHOO＋LINE＋生活類聯播</td><td class="n">50,000</td></tr>
+<tr><td><b>E</b></td><td>12 網</td><td>YAHOO＋LINE＋波波黛莉＋生活類聯播</td><td class="n">55,000</td></tr>
+<tr><td><b>F</b></td><td>15 網</td><td>一級媒體至少 5 網（經濟／風傳媒／工商／YAHOO／LINE TODAY／翻報）＋10 網</td><td class="n">66,000</td></tr>
+<tr><td><b>G 生技稿</b></td><td>8 網</td><td>YAHOO＋LINE＋生活類聯播；醫療、醫美、保養、保健適用，每案另簽</td><td class="n">60,000</td></tr>
+</table>
+<div class="note a">新聞稿 600 至 800 字、最多三張圖；撰稿費另計 5,000；最低採購 3 網；醫美、醫療、建築另詢；媒體保有置換權，擔保總數達標。</div>
+<h3 class="sh">監控與報表</h3>
+<table class="dt">
+<tr><th style="width:26%">項目</th><th>規格</th><th class="n" style="width:16%">價格</th></tr>
+<tr><td><b>日純監控回報</b></td><td>每日一次＋報表，品牌字、競品字、市場字各 1，例假日不回報</td><td class="n">36,000／月</td></tr>
+<tr><td><b>週純監控回報</b></td><td>每週一次 15,000；每週兩次 19,000</td><td class="n">15,000 起／月</td></tr>
+<tr><td><b>即時監控 Mail 自動通報</b></td><td>每日監控＋系統日報，1 組字詞組上限 10 個字</td><td class="n">22,000／月</td></tr>
+<tr><td><b>輿情分析報告</b></td><td>一個月資料量，綜合分析、重點摘要、正負情緒</td><td class="n">8,000／份</td></tr>
+<tr><td><b>月報（含市場分析）／結案報告</b></td><td>單月預算 3 萬搭贈月報；單季 9 萬搭贈結案報告</td><td class="n">3,000／5,000</td></tr>
+</table>
+</div></section><div class="foot"><div>GEO 服務規格與報價　2026.09　｜　價格均為未稅，正式金額以報價單為準，報價單自開立日起 30 日內有效。</div><img src="data:image/png;base64,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" alt=""></div></main></div></div></body></html>
